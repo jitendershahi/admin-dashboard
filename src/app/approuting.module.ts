@@ -4,7 +4,8 @@ import { RouterModule } from '@angular/router';
 import { Routes } from '@angular/router';
 
 const appRoutes:Routes = [
-  {path:'login',loadChildren:'./login/login.module#LoginModule'}
+  {path:'',loadChildren:'./pages/pages.module#PagesModule'},  
+  {path:'login',loadChildren:'./login/login.module#LoginModule'},
 ]
 
 @NgModule({
@@ -15,4 +16,5 @@ const appRoutes:Routes = [
   declarations: [],
   exports:[RouterModule]
 })
+
 export class ApproutingModule { }

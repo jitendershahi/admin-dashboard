@@ -13,9 +13,9 @@
                         <input type="password" class="form-control input-underline input-lg" id="" placeholder="Password">
                     </div>
                 </div>
-                <a class="btn rounded-btn" > Log in </a>
+                <button class="btn rounded-btn" (click)="login()" > Log in </button>
                 &nbsp;
-                <a class="btn rounded-btn" >Register</a>
+                <button class="btn rounded-btn" [routerLink]="['/signup']">Register</button>
             </form>
         </div>
     </div>
